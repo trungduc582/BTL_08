@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E48128B7-F166-4F83-9313-2B1FFABD026F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyTiVi</RootNamespace>
+    <AssemblyName>QuanLyTiVi</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\Dropbox\Bài Tập Lớn\Bài tập lớn CSLT2\Lặt Vặt\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoCaoHDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoHDN.designer.cs">
+      <DependentUpon>BaoCaoHDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmTKTiVi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmTKTiVi.Designer.cs">
+      <DependentUpon>FmTKTiVi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaoCaoHDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaoCaoHDB.designer.cs">
+      <DependentUpon>FrmBaoCaoHDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDMTiVi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDMTiVi.Designer.cs">
+      <DependentUpon>FrmDMTiVi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHoaDonBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHoaDonBan.designer.cs">
+      <DependentUpon>FrmHoaDonBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHoaDonNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHoaDonNhap.designer.cs">
+      <DependentUpon>FrmHoaDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKhachHang.Designer.cs">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDMNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDMNCC.Designer.cs">
+      <DependentUpon>FrmDMNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDMNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDMNV.Designer.cs">
+      <DependentUpon>FrmDMNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\functions.cs" />
+    <Compile Include="FrmTK-HDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTK-HDN.Designer.cs">
+      <DependentUpon>FrmTK-HDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTop3Selling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTop3Selling.Designer.cs">
+      <DependentUpon>FrmTop3Selling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTop5NCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTop5NCC.Designer.cs">
+      <DependentUpon>FrmTop5NCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BaoCaoHDN.resx">
+      <DependentUpon>BaoCaoHDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmTKTiVi.resx">
+      <DependentUpon>FmTKTiVi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaoCaoHDB.resx">
+      <DependentUpon>FrmBaoCaoHDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDMTiVi.resx">
+      <DependentUpon>FrmDMTiVi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHoaDonBan.resx">
+      <DependentUpon>FrmHoaDonBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHoaDonNhap.resx">
+      <DependentUpon>FrmHoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKhachHang.resx">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDMNCC.resx">
+      <DependentUpon>FrmDMNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDMNV.resx">
+      <DependentUpon>FrmDMNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTK-HDN.resx">
+      <DependentUpon>FrmTK-HDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTop3Selling.resx">
+      <DependentUpon>FrmTop3Selling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTop5NCC.resx">
+      <DependentUpon>FrmTop5NCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tháng 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tháng 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tháng 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tháng 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tháng 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tháng 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tháng 8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tháng 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tháng 10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tháng 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tháng 12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\101543831_2815261611928947_2364246854972997632_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12 thang back gr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tháng 11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tháng 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thêm1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnHuy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnIn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnLuu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSua1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnThoat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTimKiem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnXoa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon Báo cáo . OK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon thoát.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon xóa.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
